@@ -4,11 +4,16 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header {
     position: fixed;
-    height: 50px;
+    height: 40px;
     width: 100%;
     background-color: #739ea5;
+    z-index: 10;
 }
 
 .header-section {
@@ -21,7 +26,6 @@ header {
 
 .header-section-navbar {
     font-family: "Rubik", sans-serif;
-    ;
     display: flex;
     position: fixed;
     right: 30px;
@@ -36,16 +40,16 @@ header {
     height: 100vh;
 }
 
-.main-section-content {
+.main-section-content-page1 {
     padding: 200px 100px;
 }
 
-.main-section-content1>p {
+.main-section-page1-content1>p {
     font-size: 6rem;
     margin: 0;
 }
 
-.main-section-content1>h2 {
+.main-section-page1-content1>h2 {
     color: #f28287;
     text-shadow: 2px 2px black;    
     font-size: 5rem;
@@ -60,9 +64,61 @@ header {
     position: fixed;
     top: 90%;
     left: 90%;
+}
 
+a{
+    text-decoration: none;
 }
 
 .main-section-bottom>a>img {
     width: 30px;
+}
+
+
+.main-section-content-page2{
+    padding-top: 90px;
+    display: flex;
+}
+
+.main-section-content-page2-left{
+    padding-left: 80px;
+}
+.main-section-content-page2-left> span{
+    font-family: "Rubik", sans-serif;
+    color: #6f5cbb;
+    background-color: #f0ecff;
+    border-radius: 20px;
+    padding: 10px;
+    position: static;
+    left: 5%; 
+}
+
+.main-section-content-page2-left> p{
+    padding: 10px;
+    width: 50%;
+    text-indent: 50px;
+    text-align: justify;
+    line-height: 2;
+}
+
+.main-section-content-page2-left> a>button{
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #f0ecff;
+    background-color: #6f5cbb;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+}
+
+.main-section-content-page2-right> img{
+    width: 400px;
+    border-radius: 30px;
+    position: absolute;
+    right: 10%;
+}
+
+.main-section-content-page3{
+    width: 500px;
 }
