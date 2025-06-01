@@ -4,19 +4,23 @@
     margin: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
+/* nav-bar */
+
 header {
+    box-shadow: 1px 1px whitesmoke;
     position: fixed;
     height: 40px;
     width: 100%;
-    background-color: #739ea5;
+    background-color: #6f5cbb;
     z-index: 10;
 }
 
 .header-section {
+    color: #f0ecff;
     font-family: "Boldonse", system-ui;
     display: flex;
     align-items: center;
@@ -32,12 +36,36 @@ header {
     gap: 20px;
 }
 
-.main-section {
+a:link {
+  color: black; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none; 
+}
+
+a:hover {
+  color: whitesmoke;
+ 
+}
+
+a:active {
+  color: aliceblue; 
+}
+
+
+
+/* main-section */
+
+.main-section-page1 {
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
+    background-color: aliceblue;
 }
 
 .main-section-content-page1 {
@@ -51,7 +79,7 @@ header {
 
 .main-section-page1-content1>h2 {
     color: #f28287;
-    text-shadow: 2px 2px black;    
+    text-shadow: 2px 2px black;
     font-size: 5rem;
     margin: 0;
 }
@@ -60,40 +88,29 @@ header {
     font-size: 1.5rem;
 }
 
-.main-section-bottom {
-    position: fixed;
-    top: 90%;
-    left: 90%;
-}
+.main-section-content-page2 {
 
-a{
-    text-decoration: none;
-}
-
-.main-section-bottom>a>img {
-    width: 30px;
-}
-
-
-.main-section-content-page2{
-    padding-top: 90px;
+    background-color: aliceblue;
+    height: 100vh;
+    padding-top: 150px;
     display: flex;
 }
 
-.main-section-content-page2-left{
+.main-section-content-page2-left {
     padding-left: 80px;
 }
-.main-section-content-page2-left> span{
+
+.main-section-content-page2-left>span {
     font-family: "Rubik", sans-serif;
     color: #6f5cbb;
     background-color: #f0ecff;
     border-radius: 20px;
     padding: 10px;
     position: static;
-    left: 5%; 
+    left: 5%;
 }
 
-.main-section-content-page2-left> p{
+.main-section-content-page2-left>p {
     padding: 10px;
     width: 50%;
     text-indent: 50px;
@@ -101,7 +118,7 @@ a{
     line-height: 2;
 }
 
-.main-section-content-page2-left> a>button{
+.main-section-content-page2-left>a>button {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -112,13 +129,109 @@ a{
     border: none;
 }
 
-.main-section-content-page2-right> img{
+.main-section-content-page2-right>img {
     width: 400px;
     border-radius: 30px;
     position: absolute;
     right: 10%;
 }
 
-.main-section-content-page3{
-    width: 500px;
+
+/* Page 3 */
+
+.main-section-content-page3 {
+    height: 100vh;
+    background-color: #6f5cbb;
+    padding: 10px;
+    padding-top: 8%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.main-section-content-page3>span {
+    font-family: "Rubik", sans-serif;
+    color: #6f5cbb;
+    background-color: #f0ecff;
+    border-radius: 20px;
+    padding: 15px 50px;
+    position: static;
+    left: 5%;
+}
+
+.container {
+    padding-top: 50px;
+    display: grid;
+    grid-template-areas: 'web-line-container Graphic-line-container skill-line-container';
+    gap: 50px;
+    padding: 50px;
+}
+
+.container>div {
+    background-color: white;
+    opacity: 50%;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.web-line-container {
+    grid-area: web-line-container;
+}
+
+.Graphic-line-container {
+    grid-area: Graphic-line-container;
+}
+
+.Documentation-line-container {
+    grid-area: skill-line-container;
+}
+
+.line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* Ensure it takes the full width */
+}
+
+.web-line {
+    border-radius: 10px;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, red 80%, blue 20%);
+}
+
+.Graphic-line {
+    border-radius: 10px;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, red 90%, blue 10%);
+}
+
+.Documentation-line {
+    border-radius: 10px;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, red 50%, blue 50%);
+}
+
+
+/* main-section-bottom */
+
+.main-section-bottom {
+    box-shadow: 1px 1px black;
+    position: fixed;
+    top: 90%;
+    left: 90%;
+}
+
+.main-section-bottom>a {
+    text-decoration: none;
+}
+
+.main-section-bottom>a>img {
+    padding: 3px;
+    width: 30px;
 }
