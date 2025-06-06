@@ -11,7 +11,7 @@ html {
 /* nav-bar */
 
 header {
-    box-shadow: 1px 1px whitesmoke;
+    box-shadow: 0px 0.5px whitesmoke;
     position: fixed;
     height: 40px;
     width: 100%;
@@ -29,33 +29,32 @@ header {
 }
 
 .header-section-navbar {
+    font-size: 20px;
     font-family: "Rubik", sans-serif;
     display: flex;
     position: fixed;
     right: 30px;
-    gap: 20px;
+    gap: 30px;
 }
 
 a:link {
-  color: black; 
-  text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
 a:visited {
-  color: black;
-  text-decoration: none; 
+    color: black;
+    text-decoration: none;
 }
 
 a:hover {
-  color: whitesmoke;
- 
+    color: whitesmoke;
+
 }
 
 a:active {
-  color: aliceblue; 
+    color: aliceblue;
 }
-
-
 
 /* main-section */
 
@@ -64,8 +63,10 @@ a:active {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    /* background-image: linear-gradient(#6f5dba, aliceblue); */
+
     height: 100vh;
-    background-color: aliceblue;
+    /* background-color: rgb(205, 231, 254); */
 }
 
 .main-section-content-page1 {
@@ -78,7 +79,8 @@ a:active {
 }
 
 .main-section-page1-content1>h2 {
-    color: #f28287;
+    color: white;
+    /* color: #f28287; */
     text-shadow: 2px 2px black;
     font-size: 5rem;
     margin: 0;
@@ -141,7 +143,9 @@ a:active {
 
 .main-section-content-page3 {
     height: 100vh;
-    background-color: #6f5cbb;
+    background-image: linear-gradient(aliceblue, #6f5dba);
+
+    /* background-color: #6f5cbb; */
     padding: 10px;
     padding-top: 8%;
     text-align: center;
@@ -150,8 +154,8 @@ a:active {
 
 .main-section-content-page3>span {
     font-family: "Rubik", sans-serif;
-    color: #6f5cbb;
-    background-color: #f0ecff;
+    color: #f0ecff;
+    background-color: #6f5cbb;
     border-radius: 20px;
     padding: 15px 50px;
     position: static;
@@ -161,7 +165,9 @@ a:active {
 .container {
     padding-top: 50px;
     display: grid;
-    grid-template-areas: 'web-line-container Graphic-line-container skill-line-container';
+    grid-template-areas:
+        'web-line-container Graphic-line-container Documentation-line-container'
+        's1-line-container s2-line-container s3-line-container';
     gap: 50px;
     padding: 50px;
 }
@@ -183,7 +189,19 @@ a:active {
 }
 
 .Documentation-line-container {
-    grid-area: skill-line-container;
+    grid-area: Documentation-line-container;
+}
+
+.s1-line-container {
+    grid-area: s1-line-container;
+}
+
+.s2-line-container {
+    grid-area: s2-line-container;
+}
+
+.s3-line-container {
+    grid-area: s3-line-container;
 }
 
 .line-container {
@@ -193,7 +211,6 @@ a:active {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    /* Ensure it takes the full width */
 }
 
 .web-line {
@@ -214,14 +231,71 @@ a:active {
     border-radius: 10px;
     width: 100px;
     height: 4px;
-    background: linear-gradient(to right, red 50%, blue 50%);
+    background: linear-gradient(to right, red 95%, blue 5%);
 }
 
+.Frame_work{
+    border-radius: 10px;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, red 60%, blue 40%);
+}
+
+.Designing-line{
+    border-radius: 10px;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, red 80%, blue 20%);
+}
+
+/* main-section-content-page4 */
+
+
+.main-section-content-page4 {
+    height: 100vh;
+    background-image: linear-gradient(#6f5dba , aliceblue);
+    padding: 10px;
+    padding-top: 100px;
+}
+
+.main-section-content-page4-SKILL{
+    margin-top: 2%;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-section-content-page4-SKILL > span {
+    font-family: "Rubik", sans-serif;
+    color:  #6f5cbb;
+    background-color: #f0ecff;
+    border-radius: 20px;
+    padding: 15px 50px;
+    font-weight: 600;
+}
+
+.main-section-content-page4-container > label{
+    text-align: left;
+}
+
+.div-sam{
+    text-align: center;
+}
+
+.main-section-content-page4-container{
+
+    margin-top: 20px;
+    line-height: 25px;    
+}
+
+.main-section-content-page4-container > input{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+}
 
 /* main-section-bottom */
 
 .main-section-bottom {
-    box-shadow: 1px 1px black;
     position: fixed;
     top: 90%;
     left: 90%;
